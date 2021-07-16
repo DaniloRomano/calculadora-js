@@ -12,14 +12,19 @@ var Calculadora = {
         return result;
     },
     multiplicar: (num1, num2) => {
-        return 0;
+        let resultado = 0;
+        if (isNaN(num1) || isNaN(num2)) return 0;
+        num1 = parseFloat(num1);
+        num2 = parseFloat(num2);
+        resultado = num1 * num2;
+        return resultado;
     },
     dividir: (num1, num2) => {
         let resultado = 0;
         if (isNaN(num1) || isNaN(num2)) return 0;
         num1 = parseFloat(num1);
         num2 = parseFloat(num2);
-        if (num2===0) return 'Erro';
+        if (num2 === 0) return 'Erro';
         resultado = num1 / num2;
         return resultado;
     }
