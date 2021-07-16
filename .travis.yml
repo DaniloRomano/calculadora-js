@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - 'node'
+notifications:
+  email:
+    - d_romano_08@hotmail.com
+dist: xenial
+addons:
+  firefox: latest
+services:
+  - xvfb
+before_script:
+  - export DISPLAY=:99.0
