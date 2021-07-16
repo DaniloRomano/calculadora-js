@@ -15,7 +15,13 @@ var Calculadora = {
         return 0;
     },
     dividir: (num1, num2) => {
-        return 0;
+        let resultado = 0;
+        if (isNaN(num1) || isNaN(num2)) return 0;
+        num1 = parseFloat(num1);
+        num2 = parseFloat(num2);
+        if (num2===0) return 'Erro';
+        resultado = num1 / num2;
+        return resultado;
     }
 };
 
